@@ -1,0 +1,20 @@
+cmd='rm -rf /tmp/x' exit=1 msg=File "C:\GENIE\primary\runtime\data\bounty_workspaces\claude-builders-bounty__claude-builders-bounty-3\.claude\hooks\pre_tool_use.py", line 23
+    if not msg and re.search(r"delete\s+from\s+[\w.`"]+", low) and "where" not in low:
+                                                     ^
+SyntaxError: closing parenthesis ']' does not match opening parenthesis '('
+cmd='DROP TABLE users;' exit=1 msg=File "C:\GENIE\primary\runtime\data\bounty_workspaces\claude-builders-bounty__claude-builders-bounty-3\.claude\hooks\pre_tool_use.py", line 23
+    if not msg and re.search(r"delete\s+from\s+[\w.`"]+", low) and "where" not in low:
+                                                     ^
+SyntaxError: closing parenthesis ']' does not match opening parenthesis '('
+cmd='git push --force origin main' exit=1 msg=File "C:\GENIE\primary\runtime\data\bounty_workspaces\claude-builders-bounty__claude-builders-bounty-3\.claude\hooks\pre_tool_use.py", line 23
+    if not msg and re.search(r"delete\s+from\s+[\w.`"]+", low) and "where" not in low:
+                                                     ^
+SyntaxError: closing parenthesis ']' does not match opening parenthesis '('
+cmd='TRUNCATE TABLE sessions;' exit=1 msg=File "C:\GENIE\primary\runtime\data\bounty_workspaces\claude-builders-bounty__claude-builders-bounty-3\.claude\hooks\pre_tool_use.py", line 23
+    if not msg and re.search(r"delete\s+from\s+[\w.`"]+", low) and "where" not in low:
+                                                     ^
+SyntaxError: closing parenthesis ']' does not match opening parenthesis '('
+cmd='DELETE FROM accounts;' exit=1 msg=File "C:\GENIE\primary\runtime\data\bounty_workspaces\claude-builders-bounty__claude-builders-bounty-3\.claude\hooks\pre_tool_use.py", line 23
+    if not msg and re.search(r"delete\s+from\s+[\w.`"]+", low) and "where" not in low:
+                                                     ^
+SyntaxError: closing parenthesis ']' does not match opening parenthesis '('
