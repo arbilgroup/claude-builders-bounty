@@ -1,3 +1,19 @@
 # Changelog
 
-(sample generation deferred: FileNotFoundError:[WinError 2] The system cannot find the file specified)
+## Unreleased
+
+### Added
+- feat: real changelog.sh + sample output for bounty
+- feat: initial README with bounty board
+
+### Fixed
+- (none)
+
+### Changed
+- (none)
+
+### Removed
+- (none)
+
+### Other
+- docs: bounty acceptance delivery notes
