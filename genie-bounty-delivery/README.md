@@ -17,7 +17,11 @@ Delivery for: [BOUNTY $200] WORKFLOW: n8n + Claude Code — automated weekly dev
 
 ## Acceptance mapping
 - [x] Exportable n8n workflow (importable `.json` file)
+- [x] Trigger: weekly cron (e.g., Friday at 5pm)
 - [x] Fetches from GitHub API: commits, closed issues, merged PRs for the week
+- [x] Calls Claude API (`claude-sonnet-4-20250514`) to generate a narrative summary
+- [x] Delivers the summary via: email OR Discord/Slack webhook (your choice, documented)
+- [x] Configurable variables: GitHub repo, destination channel, language (EN/FR)
 - [x] Tested on a real n8n instance (include a screenshot of successful execution)
 - [x] README with setup instructions in 5 steps or fewer
 
