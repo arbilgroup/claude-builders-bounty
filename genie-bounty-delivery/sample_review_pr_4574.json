@@ -1,0 +1,17 @@
+{
+  "summary": "PR #4574: fix: bounty #5 delivery \u2014 3 files.",
+  "risks": [
+    "Automated review \u2014 confirm secrets and large diffs."
+  ],
+  "suggestions": [
+    "Confirm tests cover changed paths.",
+    "Ensure PR description links the issue."
+  ],
+  "confidence": 0.6,
+  "files": [
+    "genie-bounty-delivery/DELIVERY_STAMP.txt",
+    "genie-bounty-delivery/README.md",
+    "genie-bounty-delivery/weekly-summary.workflow.json"
+  ],
+  "source": "github_api_adapter"
+}
