@@ -10,7 +10,7 @@ LOG = ROOT / "genie-bounty-delivery" / "blocked.log"
 LOG.parent.mkdir(parents=True, exist_ok=True)
 low = CMD.lower()
 rules = [
-    (r"(^|\s)rm\s+(-[a-z]*f[a-z]*|--force).*|/\s*$|rm\s+-rf", "Blocked destructive command: rm -rf (refusing to delete recursively)."),
+    (r"(^|\s)rm\s+(-[a-z]*f[a-z]*|--force).*|rm\s+-rf", "Blocked destructive command: rm -rf (refusing to delete recursively)."),
     (r"drop\s+table", "Blocked destructive SQL: DROP TABLE."),
     (r"git\s+push\s+.*--force|git\s+push\s+-f\b", "Blocked dangerous git: push --force."),
     (r"truncate\s+table", "Blocked destructive SQL: TRUNCATE."),
@@ -20,7 +20,7 @@ for pat, m in rules:
     if re.search(pat, low):
         msg = m
         break
-if not msg and re.search(r"delete\s+from\s+[\w.`"]+", low) and "where" not in low:
+if not msg and re.search(r"delete\s+from\s+[\w.]+", low) and "where" not in low:
     msg = "Blocked destructive SQL: DELETE FROM without WHERE."
 if msg:
     LOG.open("a", encoding="utf-8").write(f"{time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())} BLOCKED: {CMD} :: {msg}\n")

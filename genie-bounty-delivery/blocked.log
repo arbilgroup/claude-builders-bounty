@@ -18,3 +18,8 @@ cmd='DELETE FROM accounts;' exit=1 msg=File "C:\GENIE\primary\runtime\data\bount
     if not msg and re.search(r"delete\s+from\s+[\w.`"]+", low) and "where" not in low:
                                                      ^
 SyntaxError: closing parenthesis ']' does not match opening parenthesis '('
+2026-09-28T06:34:08Z BLOCKED: rm -rf /tmp/x :: Blocked destructive command: rm -rf (refusing to delete recursively).
+2026-09-28T06:34:08Z BLOCKED: DROP TABLE users; :: Blocked destructive SQL: DROP TABLE.
+2026-09-28T06:34:08Z BLOCKED: git push --force origin main :: Blocked dangerous git: push --force.
+2026-09-28T06:34:08Z BLOCKED: TRUNCATE TABLE sessions; :: Blocked destructive SQL: TRUNCATE.
+2026-09-28T06:34:08Z BLOCKED: DELETE FROM accounts; :: Blocked destructive SQL: DELETE FROM without WHERE.
