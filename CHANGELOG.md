@@ -4,6 +4,7 @@
 
 ### Added
 - feat: real changelog.sh + sample output for bounty
+- feat: real changelog.sh + sample output for bounty
 - feat: initial README with bounty board
 
 ### Fixed
